@@ -2,7 +2,7 @@
     "name": "eneba-task",
     "private": true,
     "scripts": {
-        "install:all": "npm --prefix api install && npm --prefix web install",
+        "install:all": "npm --prefix api install --omit=dev && npm --prefix web install --include=dev",
         "build:web": "npm --prefix web run build",
         "start": "node api/src/server.js",
         "dev": "npm --prefix api run dev"
